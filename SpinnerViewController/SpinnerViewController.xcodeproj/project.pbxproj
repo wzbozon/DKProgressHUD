@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3D2D7516170AFE000D8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7416170AFE000D8F50 /* UIKit.framework */; };
+		CE3D2D7716170AFE000D8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7616170AFE000D8F50 /* Foundation.framework */; };
+		CE3D2D7916170AFE000D8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */; };
+		CE3D2D7F16170AFE000D8F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D7D16170AFE000D8F50 /* InfoPlist.strings */; };
+		CE3D2D8116170AFE000D8F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8016170AFE000D8F50 /* main.m */; };
+		CE3D2D8516170AFE000D8F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8416170AFE000D8F50 /* AppDelegate.m */; };
+		CE3D2D8716170AFE000D8F50 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D8616170AFE000D8F50 /* Default.png */; };
+		CE3D2D8916170AFE000D8F50 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D8816170AFE000D8F50 /* Default@2x.png */; };
+		CE3D2D8B16170AFE000D8F50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D8A16170AFE000D8F50 /* Default-568h@2x.png */; };
+		CE3D2D8E16170AFF000D8F50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8D16170AFF000D8F50 /* ViewController.m */; };
+		CE3D2D9116170AFF000D8F50 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D8F16170AFF000D8F50 /* ViewController_iPhone.xib */; };
+		CE3D2D9416170AFF000D8F50 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D9216170AFF000D8F50 /* ViewController_iPad.xib */; };
+		CE3D2D9C16170B38000D8F50 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D9B16170B38000D8F50 /* SpinnerView.m */; };
+		CE3D2D9F161711A4000D8F50 /* HexagonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D9E161711A4000D8F50 /* HexagonView.m */; };
+		CEA871E41618A30000444111 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA871E31618A2FF00444111 /* QuartzCore.framework */; };
+		CEA871EB1618A8F900444111 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA871EA1618A8F900444111 /* bg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3D2D7416170AFE000D8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE3D2D7616170AFE000D8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE3D2D7C16170AFE000D8F50 /* SpinnerViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpinnerViewController-Info.plist"; sourceTree = "<group>"; };
+		CE3D2D7E16170AFE000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE3D2D8016170AFE000D8F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE3D2D8216170AFE000D8F50 /* SpinnerViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpinnerViewController-Prefix.pch"; sourceTree = "<group>"; };
+		CE3D2D8316170AFE000D8F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE3D2D8416170AFE000D8F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE3D2D8616170AFE000D8F50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE3D2D8816170AFE000D8F50 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE3D2D8A16170AFE000D8F50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE3D2D8C16170AFE000D8F50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE3D2D8D16170AFF000D8F50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE3D2D9016170AFF000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CE3D2D9316170AFF000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CE3D2D9A16170B38000D8F50 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		CE3D2D9B16170B38000D8F50 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		CE3D2D9D161711A4000D8F50 /* HexagonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonView.h; sourceTree = "<group>"; };
+		CE3D2D9E161711A4000D8F50 /* HexagonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonView.m; sourceTree = "<group>"; };
+		CEA871E31618A2FF00444111 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEA871EA1618A8F900444111 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3D2D6D16170AFE000D8F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA871E41618A30000444111 /* QuartzCore.framework in Frameworks */,
+				CE3D2D7516170AFE000D8F50 /* UIKit.framework in Frameworks */,
+				CE3D2D7716170AFE000D8F50 /* Foundation.framework in Frameworks */,
+				CE3D2D7916170AFE000D8F50 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3D2D6516170AFE000D8F50 = {
+			isa = PBXGroup;
+			children = (
+				CE3D2D7A16170AFE000D8F50 /* SpinnerViewController */,
+				CE3D2D7316170AFE000D8F50 /* Frameworks */,
+				CE3D2D7116170AFE000D8F50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE3D2D7116170AFE000D8F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE3D2D7316170AFE000D8F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA871E31618A2FF00444111 /* QuartzCore.framework */,
+				CE3D2D7416170AFE000D8F50 /* UIKit.framework */,
+				CE3D2D7616170AFE000D8F50 /* Foundation.framework */,
+				CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3D2D7A16170AFE000D8F50 /* SpinnerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEA871EA1618A8F900444111 /* bg.png */,
+				CE3D2D9D161711A4000D8F50 /* HexagonView.h */,
+				CE3D2D9E161711A4000D8F50 /* HexagonView.m */,
+				CE3D2D9A16170B38000D8F50 /* SpinnerView.h */,
+				CE3D2D9B16170B38000D8F50 /* SpinnerView.m */,
+				CE3D2D8316170AFE000D8F50 /* AppDelegate.h */,
+				CE3D2D8416170AFE000D8F50 /* AppDelegate.m */,
+				CE3D2D8C16170AFE000D8F50 /* ViewController.h */,
+				CE3D2D8D16170AFF000D8F50 /* ViewController.m */,
+				CE3D2D8F16170AFF000D8F50 /* ViewController_iPhone.xib */,
+				CE3D2D9216170AFF000D8F50 /* ViewController_iPad.xib */,
+				CE3D2D7B16170AFE000D8F50 /* Supporting Files */,
+			);
+			path = SpinnerViewController;
+			sourceTree = "<group>";
+		};
+		CE3D2D7B16170AFE000D8F50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE3D2D7C16170AFE000D8F50 /* SpinnerViewController-Info.plist */,
+				CE3D2D7D16170AFE000D8F50 /* InfoPlist.strings */,
+				CE3D2D8016170AFE000D8F50 /* main.m */,
+				CE3D2D8216170AFE000D8F50 /* SpinnerViewController-Prefix.pch */,
+				CE3D2D8616170AFE000D8F50 /* Default.png */,
+				CE3D2D8816170AFE000D8F50 /* Default@2x.png */,
+				CE3D2D8A16170AFE000D8F50 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3D2D6F16170AFE000D8F50 /* SpinnerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "SpinnerViewController" */;
+			buildPhases = (
+				CE3D2D6C16170AFE000D8F50 /* Sources */,
+				CE3D2D6D16170AFE000D8F50 /* Frameworks */,
+				CE3D2D6E16170AFE000D8F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinnerViewController;
+			productName = SpinnerViewController;
+			productReference = CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3D2D6716170AFE000D8F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Alwawee;
+			};
+			buildConfigurationList = CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "SpinnerViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE3D2D6516170AFE000D8F50;
+			productRefGroup = CE3D2D7116170AFE000D8F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3D2D6F16170AFE000D8F50 /* SpinnerViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3D2D6E16170AFE000D8F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3D2D7F16170AFE000D8F50 /* InfoPlist.strings in Resources */,
+				CE3D2D8716170AFE000D8F50 /* Default.png in Resources */,
+				CE3D2D8916170AFE000D8F50 /* Default@2x.png in Resources */,
+				CE3D2D8B16170AFE000D8F50 /* Default-568h@2x.png in Resources */,
+				CE3D2D9116170AFF000D8F50 /* ViewController_iPhone.xib in Resources */,
+				CE3D2D9416170AFF000D8F50 /* ViewController_iPad.xib in Resources */,
+				CEA871EB1618A8F900444111 /* bg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3D2D6C16170AFE000D8F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3D2D8116170AFE000D8F50 /* main.m in Sources */,
+				CE3D2D8516170AFE000D8F50 /* AppDelegate.m in Sources */,
+				CE3D2D8E16170AFF000D8F50 /* ViewController.m in Sources */,
+				CE3D2D9C16170B38000D8F50 /* SpinnerView.m in Sources */,
+				CE3D2D9F161711A4000D8F50 /* HexagonView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE3D2D7D16170AFE000D8F50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3D2D7E16170AFE000D8F50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE3D2D8F16170AFF000D8F50 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3D2D9016170AFF000D8F50 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CE3D2D9216170AFF000D8F50 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3D2D9316170AFF000D8F50 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE3D2D9516170AFF000D8F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3D2D9616170AFF000D8F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE3D2D9816170AFF000D8F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpinnerViewController/SpinnerViewController-Prefix.pch";
+				INFOPLIST_FILE = "SpinnerViewController/SpinnerViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE3D2D9916170AFF000D8F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpinnerViewController/SpinnerViewController-Prefix.pch";
+				INFOPLIST_FILE = "SpinnerViewController/SpinnerViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "SpinnerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3D2D9516170AFF000D8F50 /* Debug */,
+				CE3D2D9616170AFF000D8F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "SpinnerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3D2D9816170AFF000D8F50 /* Debug */,
+				CE3D2D9916170AFF000D8F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3D2D6716170AFE000D8F50 /* Project object */;
+}

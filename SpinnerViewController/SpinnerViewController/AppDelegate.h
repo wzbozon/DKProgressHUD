@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  SpinnerViewController
 //
-//  Created by MrUnknown on 29.09.12.
-//  Copyright (c) 2012 Alwawee. All rights reserved.
+//  Created by Dennis Kutlubaev on 29.09.12.
+//  Free for being used in any projects with a mention of author.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,7 +1,7 @@
 //
-//  AppDelegate.h
+//  UIColor+randomColor.m
 //
-//  Created by Dennis Kutlubaev on 27.02.14.
+//  Created by Dennis Kutlubaev on 08.04.14.
 //  This code is distributed under the terms and conditions of the MIT license.
 //  Copyright (c) 2014 Dennis Kutlubaev (alwawee@gmail.com)
 //
@@ -24,14 +24,25 @@
 // THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
 
-@class ViewController;
+#import "UIColor+randomColor.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@implementation UIColor (randomColor)
 
-@property (strong, nonatomic) ViewController *viewController;
++ (UIColor *)randomColor
+{
+    // Author of this code is https://github.com/kylefox
+    // Taken from https://gist.github.com/kylefox/1689973
+    // My personal contribution is to create this category
+    
+    CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
+    UIColor *color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    
+    return color;
+}
+
 
 @end

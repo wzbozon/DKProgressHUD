@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DKProgressHUD.h
 //
 //  Created by Dennis Kutlubaev on 27.02.14.
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -24,14 +24,25 @@
 // THE SOFTWARE.
 //
 
+// Unique, Generic, Highly customizable hud, that is also battery efficient.
+// Instead of hexagons based SpinnerView class can be used any other view.
+// Please make pull requests, if you manage to create something unique.
+
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@interface DKProgressHUD : UIView
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic) BOOL isVisible;
 
-@property (strong, nonatomic) UIWindow *window;
+// Fill color of hexagons. If not assigned, then randomColor is set.
+@property (nonatomic, strong) UIColor *color;
 
-@property (strong, nonatomic) ViewController *viewController;
++ (DKProgressHUD*)sharedInstance;
+
++ (void)showInView:(UIView *)view;
+
++ (void)hide;
+
++ (void)setColor:(UIColor *)color;
 
 @end

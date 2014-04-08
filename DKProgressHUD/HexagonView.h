@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  HexagonView.h
 //
 //  Created by Dennis Kutlubaev on 27.02.14.
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -26,12 +26,18 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@interface HexagonView : UIView
+{
+    CGFloat currentAlpha;
+}
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic) double rotateAngle;
+@property (nonatomic) CGFloat sideLength;
+@property (nonatomic, strong) UIColor *fillColor;
+@property (nonatomic) BOOL active;
 
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ViewController *viewController;
+- (id)initWithAngle:(CGFloat)angle;
+- (id)initWithCenter:(CGPoint)center;
+- (void)makeActive:(BOOL)active;
 
 @end

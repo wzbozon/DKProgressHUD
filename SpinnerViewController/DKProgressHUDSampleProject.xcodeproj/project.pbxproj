@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE3D2D7516170AFE000D8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7416170AFE000D8F50 /* UIKit.framework */; };
-		CE3D2D7716170AFE000D8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7616170AFE000D8F50 /* Foundation.framework */; };
-		CE3D2D7916170AFE000D8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */; };
 		CE3D2D7F16170AFE000D8F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D7D16170AFE000D8F50 /* InfoPlist.strings */; };
 		CE3D2D8116170AFE000D8F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8016170AFE000D8F50 /* main.m */; };
 		CE3D2D8516170AFE000D8F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8416170AFE000D8F50 /* AppDelegate.m */; };
@@ -19,21 +16,23 @@
 		CE3D2D8E16170AFF000D8F50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D8D16170AFF000D8F50 /* ViewController.m */; };
 		CE3D2D9116170AFF000D8F50 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D8F16170AFF000D8F50 /* ViewController_iPhone.xib */; };
 		CE3D2D9416170AFF000D8F50 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3D2D9216170AFF000D8F50 /* ViewController_iPad.xib */; };
-		CE3D2D9C16170B38000D8F50 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D9B16170B38000D8F50 /* SpinnerView.m */; };
-		CE3D2D9F161711A4000D8F50 /* HexagonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D2D9E161711A4000D8F50 /* HexagonView.m */; };
-		CEA871E41618A30000444111 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA871E31618A2FF00444111 /* QuartzCore.framework */; };
-		CEA871EB1618A8F900444111 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA871EA1618A8F900444111 /* bg.png */; };
+		F82104F318F3F2D3005717F6 /* HexagonView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82104EE18F3F2D3005717F6 /* HexagonView.m */; };
+		F82104F418F3F2D3005717F6 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82104F018F3F2D3005717F6 /* SpinnerView.m */; };
+		F82104F518F3F2D3005717F6 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F82104F218F3F2D3005717F6 /* UIColor+randomColor.m */; };
+		F82104F818F3F319005717F6 /* DKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F82104F718F3F319005717F6 /* DKProgressHUD.m */; };
+		F82104FA18F3F6D6005717F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82104F918F3F6D6005717F6 /* QuartzCore.framework */; };
+		F82104FC18F3F748005717F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82104FB18F3F748005717F6 /* CoreGraphics.framework */; };
+		F82104FE18F3F753005717F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82104FD18F3F753005717F6 /* Foundation.framework */; };
+		F821050018F3F779005717F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82104FF18F3F779005717F6 /* UIKit.framework */; };
+		F83DBCD118F3FBA100C0B601 /* scarlett-johansson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F83DBCCF18F3FBA100C0B601 /* scarlett-johansson.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3D2D7416170AFE000D8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CE3D2D7616170AFE000D8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE3D2D7C16170AFE000D8F50 /* SpinnerViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpinnerViewController-Info.plist"; sourceTree = "<group>"; };
+		CE3D2D7016170AFE000D8F50 /* DKProgressHUDSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKProgressHUDSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3D2D7C16170AFE000D8F50 /* DKProgressHUDSampleProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKProgressHUDSampleProject-Info.plist"; sourceTree = "<group>"; };
 		CE3D2D7E16170AFE000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3D2D8016170AFE000D8F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE3D2D8216170AFE000D8F50 /* SpinnerViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpinnerViewController-Prefix.pch"; sourceTree = "<group>"; };
+		CE3D2D8216170AFE000D8F50 /* DKProgressHUDSampleProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKProgressHUDSampleProject-Prefix.pch"; sourceTree = "<group>"; };
 		CE3D2D8316170AFE000D8F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE3D2D8416170AFE000D8F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE3D2D8616170AFE000D8F50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -43,12 +42,19 @@
 		CE3D2D8D16170AFF000D8F50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE3D2D9016170AFF000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		CE3D2D9316170AFF000D8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		CE3D2D9A16170B38000D8F50 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
-		CE3D2D9B16170B38000D8F50 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
-		CE3D2D9D161711A4000D8F50 /* HexagonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonView.h; sourceTree = "<group>"; };
-		CE3D2D9E161711A4000D8F50 /* HexagonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonView.m; sourceTree = "<group>"; };
-		CEA871E31618A2FF00444111 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CEA871EA1618A8F900444111 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		F82104ED18F3F2D3005717F6 /* HexagonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexagonView.h; sourceTree = "<group>"; };
+		F82104EE18F3F2D3005717F6 /* HexagonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonView.m; sourceTree = "<group>"; };
+		F82104EF18F3F2D3005717F6 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		F82104F018F3F2D3005717F6 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		F82104F118F3F2D3005717F6 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
+		F82104F218F3F2D3005717F6 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
+		F82104F618F3F319005717F6 /* DKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKProgressHUD.h; sourceTree = "<group>"; };
+		F82104F718F3F319005717F6 /* DKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKProgressHUD.m; sourceTree = "<group>"; };
+		F82104F918F3F6D6005717F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F82104FB18F3F748005717F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F82104FD18F3F753005717F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F82104FF18F3F779005717F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F83DBCCF18F3FBA100C0B601 /* scarlett-johansson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scarlett-johansson.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA871E41618A30000444111 /* QuartzCore.framework in Frameworks */,
-				CE3D2D7516170AFE000D8F50 /* UIKit.framework in Frameworks */,
-				CE3D2D7716170AFE000D8F50 /* Foundation.framework in Frameworks */,
-				CE3D2D7916170AFE000D8F50 /* CoreGraphics.framework in Frameworks */,
+				F821050018F3F779005717F6 /* UIKit.framework in Frameworks */,
+				F82104FE18F3F753005717F6 /* Foundation.framework in Frameworks */,
+				F82104FC18F3F748005717F6 /* CoreGraphics.framework in Frameworks */,
+				F82104FA18F3F6D6005717F6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,39 +75,27 @@
 		CE3D2D6516170AFE000D8F50 = {
 			isa = PBXGroup;
 			children = (
+				F82104EC18F3F2D3005717F6 /* DKProgressHUD */,
 				CE3D2D7A16170AFE000D8F50 /* SpinnerViewController */,
-				CE3D2D7316170AFE000D8F50 /* Frameworks */,
 				CE3D2D7116170AFE000D8F50 /* Products */,
+				F82104FF18F3F779005717F6 /* UIKit.framework */,
+				F82104FD18F3F753005717F6 /* Foundation.framework */,
+				F82104FB18F3F748005717F6 /* CoreGraphics.framework */,
+				F82104F918F3F6D6005717F6 /* QuartzCore.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		CE3D2D7116170AFE000D8F50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */,
+				CE3D2D7016170AFE000D8F50 /* DKProgressHUDSampleProject.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CE3D2D7316170AFE000D8F50 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CEA871E31618A2FF00444111 /* QuartzCore.framework */,
-				CE3D2D7416170AFE000D8F50 /* UIKit.framework */,
-				CE3D2D7616170AFE000D8F50 /* Foundation.framework */,
-				CE3D2D7816170AFE000D8F50 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE3D2D7A16170AFE000D8F50 /* SpinnerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CEA871EA1618A8F900444111 /* bg.png */,
-				CE3D2D9D161711A4000D8F50 /* HexagonView.h */,
-				CE3D2D9E161711A4000D8F50 /* HexagonView.m */,
-				CE3D2D9A16170B38000D8F50 /* SpinnerView.h */,
-				CE3D2D9B16170B38000D8F50 /* SpinnerView.m */,
 				CE3D2D8316170AFE000D8F50 /* AppDelegate.h */,
 				CE3D2D8416170AFE000D8F50 /* AppDelegate.m */,
 				CE3D2D8C16170AFE000D8F50 /* ViewController.h */,
@@ -116,10 +110,11 @@
 		CE3D2D7B16170AFE000D8F50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE3D2D7C16170AFE000D8F50 /* SpinnerViewController-Info.plist */,
+				F83DBCCF18F3FBA100C0B601 /* scarlett-johansson.jpg */,
+				CE3D2D7C16170AFE000D8F50 /* DKProgressHUDSampleProject-Info.plist */,
 				CE3D2D7D16170AFE000D8F50 /* InfoPlist.strings */,
 				CE3D2D8016170AFE000D8F50 /* main.m */,
-				CE3D2D8216170AFE000D8F50 /* SpinnerViewController-Prefix.pch */,
+				CE3D2D8216170AFE000D8F50 /* DKProgressHUDSampleProject-Prefix.pch */,
 				CE3D2D8616170AFE000D8F50 /* Default.png */,
 				CE3D2D8816170AFE000D8F50 /* Default@2x.png */,
 				CE3D2D8A16170AFE000D8F50 /* Default-568h@2x.png */,
@@ -127,12 +122,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F82104EC18F3F2D3005717F6 /* DKProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F83DBCD218F408FB00C0B601 /* HexagonBasedSpinnerView */,
+				F83DBCD318F4090500C0B601 /* UIColor+randomColor */,
+				F82104F618F3F319005717F6 /* DKProgressHUD.h */,
+				F82104F718F3F319005717F6 /* DKProgressHUD.m */,
+			);
+			name = DKProgressHUD;
+			path = ../DKProgressHUD;
+			sourceTree = "<group>";
+		};
+		F83DBCD218F408FB00C0B601 /* HexagonBasedSpinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				F82104ED18F3F2D3005717F6 /* HexagonView.h */,
+				F82104EE18F3F2D3005717F6 /* HexagonView.m */,
+				F82104EF18F3F2D3005717F6 /* SpinnerView.h */,
+				F82104F018F3F2D3005717F6 /* SpinnerView.m */,
+			);
+			name = HexagonBasedSpinnerView;
+			sourceTree = "<group>";
+		};
+		F83DBCD318F4090500C0B601 /* UIColor+randomColor */ = {
+			isa = PBXGroup;
+			children = (
+				F82104F118F3F2D3005717F6 /* UIColor+randomColor.h */,
+				F82104F218F3F2D3005717F6 /* UIColor+randomColor.m */,
+			);
+			name = "UIColor+randomColor";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE3D2D6F16170AFE000D8F50 /* SpinnerViewController */ = {
+		CE3D2D6F16170AFE000D8F50 /* DKProgressHUDSampleProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "SpinnerViewController" */;
+			buildConfigurationList = CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "DKProgressHUDSampleProject" */;
 			buildPhases = (
 				CE3D2D6C16170AFE000D8F50 /* Sources */,
 				CE3D2D6D16170AFE000D8F50 /* Frameworks */,
@@ -142,9 +169,9 @@
 			);
 			dependencies = (
 			);
-			name = SpinnerViewController;
+			name = DKProgressHUDSampleProject;
 			productName = SpinnerViewController;
-			productReference = CE3D2D7016170AFE000D8F50 /* SpinnerViewController.app */;
+			productReference = CE3D2D7016170AFE000D8F50 /* DKProgressHUDSampleProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,10 +180,10 @@
 		CE3D2D6716170AFE000D8F50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Alwawee;
 			};
-			buildConfigurationList = CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "SpinnerViewController" */;
+			buildConfigurationList = CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "DKProgressHUDSampleProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE3D2D6F16170AFE000D8F50 /* SpinnerViewController */,
+				CE3D2D6F16170AFE000D8F50 /* DKProgressHUDSampleProject */,
 			);
 		};
 /* End PBXProject section */
@@ -180,11 +207,11 @@
 			files = (
 				CE3D2D7F16170AFE000D8F50 /* InfoPlist.strings in Resources */,
 				CE3D2D8716170AFE000D8F50 /* Default.png in Resources */,
+				F83DBCD118F3FBA100C0B601 /* scarlett-johansson.jpg in Resources */,
 				CE3D2D8916170AFE000D8F50 /* Default@2x.png in Resources */,
 				CE3D2D8B16170AFE000D8F50 /* Default-568h@2x.png in Resources */,
 				CE3D2D9116170AFF000D8F50 /* ViewController_iPhone.xib in Resources */,
 				CE3D2D9416170AFF000D8F50 /* ViewController_iPad.xib in Resources */,
-				CEA871EB1618A8F900444111 /* bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3D2D8116170AFE000D8F50 /* main.m in Sources */,
+				F82104F318F3F2D3005717F6 /* HexagonView.m in Sources */,
+				F82104F818F3F319005717F6 /* DKProgressHUD.m in Sources */,
+				F82104F518F3F2D3005717F6 /* UIColor+randomColor.m in Sources */,
 				CE3D2D8516170AFE000D8F50 /* AppDelegate.m in Sources */,
+				F82104F418F3F2D3005717F6 /* SpinnerView.m in Sources */,
 				CE3D2D8E16170AFF000D8F50 /* ViewController.m in Sources */,
-				CE3D2D9C16170B38000D8F50 /* SpinnerView.m in Sources */,
-				CE3D2D9F161711A4000D8F50 /* HexagonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +284,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SpinnerViewController/DKProgressHUDSampleProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -276,6 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SpinnerViewController/DKProgressHUDSampleProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -288,9 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpinnerViewController/SpinnerViewController-Prefix.pch";
-				INFOPLIST_FILE = "SpinnerViewController/SpinnerViewController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SpinnerViewController/DKProgressHUDSampleProject-Prefix.pch";
+				INFOPLIST_FILE = "SpinnerViewController/DKProgressHUDSampleProject-Info.plist";
+				PRODUCT_NAME = DKProgressHUDSampleProject;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,9 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpinnerViewController/SpinnerViewController-Prefix.pch";
-				INFOPLIST_FILE = "SpinnerViewController/SpinnerViewController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SpinnerViewController/DKProgressHUDSampleProject-Prefix.pch";
+				INFOPLIST_FILE = "SpinnerViewController/DKProgressHUDSampleProject-Info.plist";
+				PRODUCT_NAME = DKProgressHUDSampleProject;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -309,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "SpinnerViewController" */ = {
+		CE3D2D6A16170AFE000D8F50 /* Build configuration list for PBXProject "DKProgressHUDSampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE3D2D9516170AFF000D8F50 /* Debug */,
@@ -318,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "SpinnerViewController" */ = {
+		CE3D2D9716170AFF000D8F50 /* Build configuration list for PBXNativeTarget "DKProgressHUDSampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE3D2D9816170AFF000D8F50 /* Debug */,

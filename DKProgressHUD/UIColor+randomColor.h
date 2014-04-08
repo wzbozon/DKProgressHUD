@@ -1,7 +1,7 @@
 //
-//  AppDelegate.h
+//  UIColor+randomColor.h
 //
-//  Created by Dennis Kutlubaev on 27.02.14.
+//  Created by Dennis Kutlubaev on 08.04.14.
 //  This code is distributed under the terms and conditions of the MIT license.
 //  Copyright (c) 2014 Dennis Kutlubaev (alwawee@gmail.com)
 //
@@ -24,14 +24,11 @@
 // THE SOFTWARE.
 //
 
+
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@interface UIColor (randomColor)
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ViewController *viewController;
++ (UIColor *)randomColor;
 
 @end

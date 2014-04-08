@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SpinnerView.h
 //
 //  Created by Dennis Kutlubaev on 27.02.14.
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -26,12 +26,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@interface SpinnerView : UIView
+{
+    NSInteger i;
+}
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) NSMutableArray *hexagons;
+@property (nonatomic, strong) NSTimer *timer;
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)startAnimating;
 
-@property (strong, nonatomic) ViewController *viewController;
+- (void)stopAnimating;
 
 @end

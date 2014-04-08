@@ -1,15 +1,37 @@
 //
+//
 //  HexagonView.m
-//  SpinnerViewController
 //
-//  Created by Dennis Kutlubaev on 29.09.12.
-//  Free for being used in any projects with a mention of author.
+//  Created by Dennis Kutlubaev on 27.02.14.
+//  This code is distributed under the terms and conditions of the MIT license.
+//  Copyright (c) 2014 Dennis Kutlubaev (alwawee@gmail.com)
 //
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
 
 #import "HexagonView.h"
+#import "UIColor+randomColor.h"
+#import <QuartzCore/QuartzCore.h>
+#import "DKProgressHUD.h"
 
-#define FILL_COLOR [UIColor blueColor]
-
+static const float hexagonSize = 12.0f;
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 @implementation HexagonView
@@ -27,7 +49,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 - (id)initWithAngle:(CGFloat)angle
 {
-    self = [super initWithFrame:CGRectMake(0, 0, 60, 60)];
+    self = [super initWithFrame:CGRectMake(0, 0, hexagonSize, hexagonSize)];
     if (self) {
         CGAffineTransform transform = CGAffineTransformMakeRotation(radians(angle));
         [self setTransform:transform];
@@ -38,7 +60,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 - (id)initWithCenter:(CGPoint)center
 {
-    self = [super initWithFrame:CGRectMake(0, 0, 60, 60)];
+    self = [super initWithFrame:CGRectMake(0, 0, hexagonSize, hexagonSize)];
     if (self) {
         CGAffineTransform transform = CGAffineTransformMakeRotation(radians(30));
         [self setTransform:transform];
@@ -48,8 +70,6 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 }
 
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     self.rotateAngle = radians(30);
@@ -58,9 +78,14 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     
     CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetRGBStrokeColor(context, 1.0, 1.0, 1.0, 1.0);
-    CGColorRef fillColor = FILL_COLOR.CGColor;
+    CGColorRef fillColor = NULL;
+    fillColor = [[DKProgressHUD sharedInstance] color].CGColor;
+    if ( fillColor == NULL ) {
+        fillColor = [UIColor randomColor].CGColor;
+    }
+    
     CGContextSetFillColorWithColor(context, fillColor);
-	CGContextSetLineWidth(context, 2.0);
+	CGContextSetLineWidth(context, 1.0);
     
     CGPoint center = CGPointMake(rect.size.width/2.0, rect.size.height/2.0);
     
@@ -82,6 +107,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 - (void)makeActive:(BOOL)active
 {
     _active = active;
+    
     if (active) {
         currentAlpha = 1.0;
     }
@@ -92,14 +118,5 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     [self setNeedsDisplay];
 }
 
-/*- (UIColor*)fillColor
-{
-    if (_fillColor) {
-        return _fillColor;
-    }
-    else {
-        return [UIColor blackColor];
-    }
-}*/
 
 @end

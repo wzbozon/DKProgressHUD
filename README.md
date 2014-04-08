@@ -1,6 +1,6 @@
 #DKProgressHUD
 
-Audio player component for iOS (both iPhone and iPad) with neat and flexible interface design. 
+Custom ActivityView for iOS (Spinner). 
 
 ##GIF demo
 
@@ -19,11 +19,16 @@ pod DKProgressHUD
 
 There is a sample project of a universal app for iPhone and iPad.
 
-First you create an instance of a player object: 
+Very simple to use:
 ```
 [DKProgressHUD showInView:self.view];
 
 [DKProgressHUD hide];
+```
+
+You can set a color for hexagons in a DKProgressHUD, otherwise they will be randomly generated:
+```
+[DKProgressHUD setColor:COLOR_CUSTOM_LIGHT_BLUE];
 ```
 
 ###Supported iOS Versions 

@@ -1,4 +1,4 @@
-DKSpinner
+DKProgressHUD
 =========
 
-Custom ActivityView for iOS (Spinner)
+Custom HUD for iOS

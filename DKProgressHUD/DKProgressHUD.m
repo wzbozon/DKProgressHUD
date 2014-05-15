@@ -52,12 +52,19 @@ static DKProgressHUD *sharedInstance;
 
 + (void)showInView:(UIView *)view
 {
+    [self showInView:view withLocation:CGPointMake(view.frame.size.width/2, view.frame.size.height/2)];
+ }
+
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center
+{
     DKProgressHUD *sharedInstance = [DKProgressHUD sharedInstance];
     
     if ( ! [sharedInstance isVisible] ) {
-    
+        
         sharedInstance.spinnerView = [[SpinnerView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        sharedInstance.spinnerView.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2);
+        
+        sharedInstance.spinnerView.center = center;
+        
         [view addSubview:sharedInstance.spinnerView];
         
         [sharedInstance setIsVisible:YES];
@@ -88,6 +95,13 @@ static DKProgressHUD *sharedInstance;
 {
     [[DKProgressHUD sharedInstance] setColor:color];
 }
+
+
++(void) setBackgroundColor:(UIColor *)color
+{
+    [[DKProgressHUD sharedInstance] setBackgroundColor:color];
+}
+
 
 
 @end

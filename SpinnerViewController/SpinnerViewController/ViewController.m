@@ -53,6 +53,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    //You can set a color for hexagons in a DKProgressHUD, otherwise it will be randomly generated.
+    //[DKProgressHUD setColor:[UIColor blueColor]];
+    //[DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFill];
@@ -64,8 +67,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [self.button addTarget:self action:@selector(restartClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.button];
     
-    //You can set a color for hexagons in a DKProgressHUD, otherwise it will be randomly generated.
-    //[DKProgressHUD setColor:COLOR_CUSTOM_LIGHT_BLUE];
+
+    
+    
     
     [self restartClicked:nil];
 }
@@ -75,8 +79,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 {
     [self.imageView setImage:nil];
     [self.button setHidden:YES];
-    
+
     [DKProgressHUD showInView:self.view];
+   // [DKProgressHUD showInView:self.view withLocation:CGPointMake(140, 220)];
+ 
     
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:3.0];
 }

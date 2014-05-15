@@ -36,13 +36,19 @@
 
 // Fill color of hexagons. If not assigned, then randomColor is set.
 @property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic) CGPoint point;
 
 + (DKProgressHUD*)sharedInstance;
 
 + (void)showInView:(UIView *)view;
 
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center;
+
 + (void)hide;
 
 + (void)setColor:(UIColor *)color;
+
++ (void)setBackgroundColor: (UIColor *)color;
 
 @end

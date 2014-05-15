@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>005296FC-2EA6-47F8-BF23-4E24E7E91B85</string>
+	<string>99832830-D96E-48CF-B106-E9BD68B0222A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DKProgressHUDSampleProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>65213D91-9DB0-4765-BBCD-533F8198B07D</key>
-		<string>https://github.com/wzbozon/DKSpinner.git</string>
+		<key>A7D61A34-66ED-4385-A44B-8D812CBCD2A1</key>
+		<string>ssh://github.com/Ruckt/DKProgressHUD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SpinnerViewController/DKProgressHUDSampleProject.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>65213D91-9DB0-4765-BBCD-533F8198B07D</key>
+		<key>A7D61A34-66ED-4385-A44B-8D812CBCD2A1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/wzbozon/DKSpinner.git</string>
+	<string>ssh://github.com/Ruckt/DKProgressHUD.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>65213D91-9DB0-4765-BBCD-533F8198B07D</string>
+	<string>A7D61A34-66ED-4385-A44B-8D812CBCD2A1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65213D91-9DB0-4765-BBCD-533F8198B07D</string>
+			<string>A7D61A34-66ED-4385-A44B-8D812CBCD2A1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>DKSpinnerView</string>
+			<string>DKProgressHUD</string>
 		</dict>
 	</array>
 </dict>

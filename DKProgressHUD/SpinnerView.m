@@ -28,6 +28,7 @@
 #import "SpinnerView.h"
 #import "HexagonView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "DKProgressHUD.h"
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
@@ -67,7 +68,11 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
         [self.hexagons addObject:hexagon5];
         [self.hexagons addObject:hexagon3];
         
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [[DKProgressHUD sharedInstance] backgroundColor];
+        if (self.backgroundColor == NULL){
+            self.backgroundColor = [UIColor blackColor];
+        }
+
         self.alpha = 0.8;
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;

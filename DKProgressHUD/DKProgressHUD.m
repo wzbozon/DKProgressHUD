@@ -52,16 +52,28 @@ static DKProgressHUD *sharedInstance;
 
 + (void)showInView:(UIView *)view
 {
-    [self showInView:view withLocation:CGPointMake(view.frame.size.width/2, view.frame.size.height/2)];
+    [self showInView:view withLocation:CGPointMake(view.frame.size.width/2, view.frame.size.height/2) andWithFrameSizeMultipleOf:1];
  }
 
 + (void)showInView:(UIView *)view withLocation:(CGPoint) center
+{
+    
+    [self showInView:view withLocation:center andWithFrameSizeMultipleOf:1];
+}
+
++ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(NSInteger) multiplier
+{
+    [self showInView:view withLocation:CGPointMake(view.frame.size.width/2, view.frame.size.height/2) andWithFrameSizeMultipleOf:multiplier];
+    
+}
+
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(NSInteger) multiplier
 {
     DKProgressHUD *sharedInstance = [DKProgressHUD sharedInstance];
     
     if ( ! [sharedInstance isVisible] ) {
         
-        sharedInstance.spinnerView = [[SpinnerView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        sharedInstance.spinnerView = [[SpinnerView alloc] initWithFrame:CGRectMake(0, 0, multiplier*44, multiplier*44)];
         
         sharedInstance.spinnerView.center = center;
         

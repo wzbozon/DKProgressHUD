@@ -53,8 +53,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
     //You can set a color for hexagons in a DKProgressHUD, otherwise it will be randomly generated.
     //[DKProgressHUD setColor:[UIColor blueColor]];
+    
+    //You can set a different background color for DKProgressHUD spinner, otherwise it will be black.
     //[DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
@@ -80,9 +83,17 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [self.imageView setImage:nil];
     [self.button setHidden:YES];
 
-    [DKProgressHUD showInView:self.view];
-   // [DKProgressHUD showInView:self.view withLocation:CGPointMake(140, 220)];
- 
+    //[DKProgressHUD showInView:self.view];
+
+    //An intiizlizer to change the view location of the DKProgressHUD
+    //[DKProgressHUD showInView:self.view withLocation:CGPointMake(220, 130)];
+    
+    //An initializer to change the size of the background frame of DKProgressHUD
+    //[DKProgressHUD showInView:self.view withFrameSizeMultipleOf: 5];
+    
+    //An intializer for both variables
+    [DKProgressHUD showInView:self.view withLocation:CGPointMake(100,200) andWithFrameSizeMultipleOf:3];
+    
     
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:3.0];
 }

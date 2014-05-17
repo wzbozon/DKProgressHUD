@@ -45,6 +45,10 @@
 
 + (void)showInView:(UIView *)view withLocation:(CGPoint) center;
 
++ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(NSInteger) multiplier;
+
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(NSInteger) multiplier;
+
 + (void)hide;
 
 + (void)setColor:(UIColor *)color;

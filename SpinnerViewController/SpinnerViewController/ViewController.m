@@ -59,6 +59,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     
     //You can set a different background color for DKProgressHUD spinner, otherwise it will be black.
     //[DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
+    
+    //To increase the spinning radius of the hexagons
+    [DKProgressHUD setHexagonSpinRadiusByMultipleOf:1.55];
+    
+    //To increase the size of the hexagons
+    [DKProgressHUD setHexagonSizeByMultipleOf:1.8];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFill];
@@ -92,7 +98,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     //[DKProgressHUD showInView:self.view withFrameSizeMultipleOf: 5];
     
     //An intializer for both variables
-    [DKProgressHUD showInView:self.view withLocation:CGPointMake(100,200) andWithFrameSizeMultipleOf:3];
+    [DKProgressHUD showInView:self.view withLocation:CGPointMake(160,200) andWithFrameSizeMultipleOf:1.75];
     
     
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:3.0];

@@ -39,8 +39,10 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     self = [super initWithFrame:frame];
     if (self) {
         
-        NSInteger multiple = 3;
-        
+        float multiple = [[DKProgressHUD sharedInstance] hexagonSpinRadius];
+        if (multiple == 0) {
+            multiple = 1;
+        }
         self.hexagons = [[NSMutableArray alloc] initWithCapacity:6];
         
         CGPoint center = CGPointMake(frame.size.width/2.0, frame.size.height/2.0);

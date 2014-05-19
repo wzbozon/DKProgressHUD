@@ -37,6 +37,10 @@
 // Fill color of hexagons. If not assigned, then randomColor is set.
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) NSArray *colorArray;
+
+@property (nonatomic) float hexagonSpinRadius;
+@property (nonatomic) float hexagonSizeMultiple;
 @property (nonatomic) CGPoint point;
 
 + (DKProgressHUD*)sharedInstance;
@@ -45,14 +49,20 @@
 
 + (void)showInView:(UIView *)view withLocation:(CGPoint) center;
 
-+ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(NSInteger) multiplier;
++ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(float) multiplier;
 
-+ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(NSInteger) multiplier;
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(float) multiplier;
 
 + (void)hide;
 
 + (void)setColor:(UIColor *)color;
 
++ (void)setColors:(NSArray *)arrayOfColors;
+
 + (void)setBackgroundColor: (UIColor *)color;
+
++ (void)setHexagonSpinRadiusByMultipleOf:(float) multiple;
+
++ (void)setHexagonSizeByMultipleOf:(float) multiple;
 
 @end

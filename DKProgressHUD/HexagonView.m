@@ -58,9 +58,15 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 }
 
 
-- (id)initWithCenter:(CGPoint)center
+- (id)initWithCenter:(CGPoint)center 
 {
-    self = [super initWithFrame:CGRectMake(0, 0, hexagonSize, hexagonSize)];
+    float multiple = [[DKProgressHUD sharedInstance] hexagonSizeMultiple];
+    if (multiple ==0 ) {
+        multiple = 1;
+    }
+    NSInteger newHexagonSize = multiple * hexagonSize;
+    
+    self = [super initWithFrame:CGRectMake(0, 0, newHexagonSize, newHexagonSize)];
     if (self) {
         CGAffineTransform transform = CGAffineTransformMakeRotation(radians(30));
         [self setTransform:transform];

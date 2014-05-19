@@ -61,18 +61,19 @@ static DKProgressHUD *sharedInstance;
     [self showInView:view withLocation:center andWithFrameSizeMultipleOf:1];
 }
 
-+ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(NSInteger) multiplier
++ (void)showInView:(UIView *)view withFrameSizeMultipleOf:(float) multiplier
 {
     [self showInView:view withLocation:CGPointMake(view.frame.size.width/2, view.frame.size.height/2) andWithFrameSizeMultipleOf:multiplier];
     
 }
 
-+ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(NSInteger) multiplier
++ (void)showInView:(UIView *)view withLocation:(CGPoint) center andWithFrameSizeMultipleOf:(float) multiplier
 {
     DKProgressHUD *sharedInstance = [DKProgressHUD sharedInstance];
     
     if ( ! [sharedInstance isVisible] ) {
         
+        NSLog (@"%f", multiplier);
         sharedInstance.spinnerView = [[SpinnerView alloc] initWithFrame:CGRectMake(0, 0, multiplier*44, multiplier*44)];
         
         sharedInstance.spinnerView.center = center;
@@ -108,12 +109,25 @@ static DKProgressHUD *sharedInstance;
     [[DKProgressHUD sharedInstance] setColor:color];
 }
 
++ (void)setColors:(NSArray *)arrayOfColors
+{
+    [[DKProgressHUD sharedInstance] setColorArray:arrayOfColors];
+}
 
-+(void) setBackgroundColor:(UIColor *)color
+
++ (void) setBackgroundColor:(UIColor *)color
 {
     [[DKProgressHUD sharedInstance] setBackgroundColor:color];
 }
 
++ (void) setHexagonSpinRadiusByMultipleOf:(float) multiple
+{
+    [[DKProgressHUD sharedInstance] setHexagonSpinRadius:multiple];
+}
 
++ (void)setHexagonSizeByMultipleOf:(float)multiple
+{
+    [[DKProgressHUD sharedInstance] setHexagonSizeMultiple:multiple];
+}
 
 @end

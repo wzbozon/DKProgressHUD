@@ -73,7 +73,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
         [self.hexagons addObject:hexagon3];
         
         self.backgroundColor = [[DKProgressHUD sharedInstance] backgroundColor];
-        if (self.backgroundColor == NULL){
+        if (!self.backgroundColor){
             self.backgroundColor = [UIColor blackColor];
         }
 

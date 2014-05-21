@@ -41,6 +41,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) NSArray *colorArray;
 
 @end
 
@@ -54,17 +55,24 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //You can set a color for hexagons in a DKProgressHUD, otherwise it will be randomly generated.
+  //  self.colorArray = [[NSArray alloc] initWithObjects:[UIColor redColor],[UIColor blueColor],[UIColor greenColor], [UIColor yellowColor],[UIColor purpleColor], [UIColor orangeColor],nil];
+    
+    self.colorArray = [[NSArray alloc] initWithObjects:[UIColor colorWithRed:0.341 green:0.651 blue:0.239 alpha:1], [UIColor colorWithRed:0.961 green:0.706 blue:0.153 alpha:1], [UIColor colorWithRed:0.941 green:0.49 blue:0.122 alpha:1], [UIColor colorWithRed:0.878 green:0.227 blue:0.239 alpha:1], [UIColor colorWithRed:0.584 green:0.235 blue:0.588 alpha:1], [UIColor colorWithRed:0.031 green:0.518 blue:0.761 alpha:1], nil];
+    
+    
+    //You can set one color for hexagons in a DKProgressHUD or set an array of colors,  otherwise it will be randomly generated.
     //[DKProgressHUD setColor:[UIColor blueColor]];
     
+    [DKProgressHUD setColors:self.colorArray];
+    
     //You can set a different background color for DKProgressHUD spinner, otherwise it will be black.
-    //[DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
+    [DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
     
     //To increase the spinning radius of the hexagons
-    [DKProgressHUD setHexagonSpinRadiusByMultipleOf:1.55];
+    [DKProgressHUD setHexagonSpinRadiusByMultipleOf:2.35];
     
     //To increase the size of the hexagons
-    [DKProgressHUD setHexagonSizeByMultipleOf:1.8];
+    [DKProgressHUD setHexagonSizeByMultipleOf:3.1];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFill];
@@ -98,7 +106,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     //[DKProgressHUD showInView:self.view withFrameSizeMultipleOf: 5];
     
     //An intializer for both variables
-    [DKProgressHUD showInView:self.view withLocation:CGPointMake(160,200) andWithFrameSizeMultipleOf:1.75];
+    [DKProgressHUD showInView:self.view withLocation:CGPointMake(160,200) andWithFrameSizeMultipleOf:2.75];
     
     
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:3.0];

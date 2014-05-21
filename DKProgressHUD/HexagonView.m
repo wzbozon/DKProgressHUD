@@ -86,8 +86,16 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 	CGContextSetRGBStrokeColor(context, 1.0, 1.0, 1.0, 1.0);
     CGColorRef fillColor = NULL;
     fillColor = [[DKProgressHUD sharedInstance] color].CGColor;
-    if ( fillColor == NULL ) {
-        fillColor = [UIColor randomColor].CGColor;
+    if (!fillColor) {
+
+        NSArray *colorArray = [[DKProgressHUD sharedInstance] colorArray];
+        if (!colorArray) {
+            fillColor = [UIColor randomColor].CGColor;
+        }
+        else {
+            NSUInteger index = arc4random_uniform([colorArray count]);
+            fillColor = [[colorArray objectAtIndex:index] CGColor];
+         }
     }
     
     CGContextSetFillColorWithColor(context, fillColor);

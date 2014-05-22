@@ -93,8 +93,16 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
             fillColor = [UIColor randomColor].CGColor;
         }
         else {
-            NSUInteger index = arc4random_uniform([colorArray count]);
-            fillColor = [[colorArray objectAtIndex:index] CGColor];
+            NSInteger colorIndex = [[DKProgressHUD sharedInstance] colorIndex];
+            //NSInteger colorIndex = arc4random_uniform([colorArray count]); Use this for a random order of array colors
+
+            fillColor = [[colorArray objectAtIndex:colorIndex] CGColor];
+ 
+            colorIndex = colorIndex + 1;
+            if (colorIndex == [colorArray count]) {
+                colorIndex = 0;
+            }
+            [[DKProgressHUD sharedInstance] setColorIndex:colorIndex];
          }
     }
     

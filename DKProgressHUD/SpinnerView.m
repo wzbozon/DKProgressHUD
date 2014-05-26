@@ -28,6 +28,7 @@
 #import "SpinnerView.h"
 #import "HexagonView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "DKProgressHUD.h"
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
@@ -38,26 +39,30 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     self = [super initWithFrame:frame];
     if (self) {
         
+        float multiple = [[DKProgressHUD sharedInstance] hexagonSpinRadius];
+        if (multiple == 0) {
+            multiple = 1;
+        }
         self.hexagons = [[NSMutableArray alloc] initWithCapacity:6];
         
         CGPoint center = CGPointMake(frame.size.width/2.0, frame.size.height/2.0);
         
-        HexagonView *hexagon = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-7, center.y-12)];
+        HexagonView *hexagon = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-multiple*7, center.y-multiple*12)];
         [self addSubview:hexagon];
         
-        HexagonView *hexagon2 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+7, center.y-12)];
+        HexagonView *hexagon2 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+multiple*7, center.y-multiple*12)];
         [self addSubview:hexagon2];
         
-        HexagonView *hexagon3 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-14, center.y)];
+        HexagonView *hexagon3 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-multiple*14, center.y)];
         [self addSubview:hexagon3];
         
-        HexagonView *hexagon4 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+14, center.y)];
+        HexagonView *hexagon4 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+multiple*14, center.y)];
         [self addSubview:hexagon4];
         
-        HexagonView *hexagon5 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-7, center.y+12)];
+        HexagonView *hexagon5 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x-multiple*7, center.y+multiple*12)];
         [self addSubview:hexagon5];
         
-        HexagonView *hexagon6 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+7, center.y+12)];
+        HexagonView *hexagon6 = [[HexagonView alloc] initWithCenter:CGPointMake(center.x+multiple*7, center.y+multiple*12)];
         [self addSubview:hexagon6];
         
         [self.hexagons addObject:hexagon];
@@ -67,7 +72,11 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
         [self.hexagons addObject:hexagon5];
         [self.hexagons addObject:hexagon3];
         
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [[DKProgressHUD sharedInstance] backgroundColor];
+        if (!self.backgroundColor){
+            self.backgroundColor = [UIColor blackColor];
+        }
+
         self.alpha = 0.8;
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;

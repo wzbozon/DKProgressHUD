@@ -41,6 +41,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) NSArray *colorArray;
 
 @end
 
@@ -53,6 +54,23 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.colorArray = [[NSArray alloc] initWithObjects:[UIColor redColor],[UIColor blueColor],[UIColor greenColor], [UIColor yellowColor],[UIColor purpleColor], [UIColor orangeColor], [UIColor brownColor],nil];
+    
+    
+    //You can set one color for hexagons in a DKProgressHUD or set an array of colors,  otherwise it will be randomly generated.
+    //[DKProgressHUD setColor:[UIColor blueColor]];
+    
+    [DKProgressHUD setColors:self.colorArray];
+    
+    //You can set a different background color for DKProgressHUD spinner, otherwise it will be black.
+    [DKProgressHUD setBackgroundColor:[UIColor whiteColor]];
+    
+    //To increase the spinning radius of the hexagons
+    [DKProgressHUD setHexagonSpinRadiusByMultipleOf:2.35];
+    
+    //To increase the size of the hexagons
+    [DKProgressHUD setHexagonSizeByMultipleOf:3.1];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFill];
@@ -64,8 +82,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [self.button addTarget:self action:@selector(restartClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.button];
     
-    //You can set a color for hexagons in a DKProgressHUD, otherwise it will be randomly generated.
-    //[DKProgressHUD setColor:COLOR_CUSTOM_LIGHT_BLUE];
+
+    
+    
     
     [self restartClicked:nil];
 }
@@ -75,8 +94,18 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
 {
     [self.imageView setImage:nil];
     [self.button setHidden:YES];
+
+    //[DKProgressHUD showInView:self.view];
+
+    //An intiizlizer to change the view location of the DKProgressHUD
+    //[DKProgressHUD showInView:self.view withLocation:CGPointMake(220, 130)];
     
-    [DKProgressHUD showInView:self.view];
+    //An initializer to change the size of the background frame of DKProgressHUD
+    //[DKProgressHUD showInView:self.view withFrameSizeMultipleOf: 5];
+    
+    //An intializer for both variables
+    [DKProgressHUD showInView:self.view withLocation:CGPointMake(160,200) andWithFrameSizeMultipleOf:2.75];
+    
     
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:3.0];
 }

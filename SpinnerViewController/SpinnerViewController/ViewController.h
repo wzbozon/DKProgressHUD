@@ -2,6 +2,7 @@
 //  ViewController.h
 //
 //  Created by Dennis Kutlubaev on 27.02.14.
+//  Contributors: Edan Lichtenstein
 //  This code is distributed under the terms and conditions of the MIT license.
 //  Copyright (c) 2014 Dennis Kutlubaev (alwawee@gmail.com)
 //

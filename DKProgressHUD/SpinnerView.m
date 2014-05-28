@@ -2,6 +2,7 @@
 //  SpinnerView.m
 //
 //  Created by Dennis Kutlubaev on 27.02.14.
+//  Contributors: Edan Lichtenstein
 //  This code is distributed under the terms and conditions of the MIT license.
 //  Copyright (c) 2014 Dennis Kutlubaev (alwawee@gmail.com)
 //
@@ -29,8 +30,6 @@
 #import "HexagonView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "DKProgressHUD.h"
-
-static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 @implementation SpinnerView
 

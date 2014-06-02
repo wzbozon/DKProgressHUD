@@ -44,7 +44,7 @@
 @property (nonatomic) float hexagonSizeMultiple;
 @property (nonatomic) CGPoint point;
 
-@property (nonatomic) NSInteger *colorIndex;
+@property (nonatomic) NSInteger colorIndex;
 
 + (DKProgressHUD*)sharedInstance;
 

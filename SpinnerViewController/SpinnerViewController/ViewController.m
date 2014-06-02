@@ -83,10 +83,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     [self.button addTarget:self action:@selector(restartClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.button];
     
-
-    
-    
-    
     [self restartClicked:nil];
 }
 

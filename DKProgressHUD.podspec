@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                    Custom ActivityView for iOS (Spinner)  
                    DESC
   s.homepage     = "https://github.com/wzbozon/DKProgressHUD.git"
-  s.screenshots  = "https://github.com/wzbozon/DKProgressHUD/blob/master/Screenshot.png"
+  s.screenshots  = "https://raw.githubusercontent.com/wzbozon/DKProgressHUD/master/Screenshot.png"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { "Dennis Kutlubaev" => "alwawee@gmail.com"}
   s.social_media_url = "http://twitter.com/wzbozon"

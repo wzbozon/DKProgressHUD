@@ -76,7 +76,10 @@
             self.backgroundColor = [UIColor blackColor];
         }
 
-        self.alpha = 0.8;
+        self.alpha = [[DKProgressHUD sharedInstance] backgroundAlpha];
+        
+        if (self.alpha == 0.0) self.alpha = 0.8;
+        
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;
         

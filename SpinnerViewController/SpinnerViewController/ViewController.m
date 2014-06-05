@@ -72,6 +72,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:opacity]
     
     //To increase the size of the hexagons
     [DKProgressHUD setHexagonSizeByMultipleOf:3.1];
+    
+    //To change opacity of a background
+    [DKProgressHUD setBackgroundAlpha:0.7];
 
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 150, 300, 1080.0 / 1920.0 * 300.0)];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFill];

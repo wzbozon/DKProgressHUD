@@ -105,6 +105,13 @@ static DKProgressHUD *sharedInstance;
 }
 
 
++ (void)setBackgroundAlpha:(float)backgroundAlpha
+{
+    [[DKProgressHUD sharedInstance] setBackgroundAlpha:backgroundAlpha];
+    [[[[DKProgressHUD sharedInstance] spinnerView] layer] setOpacity:backgroundAlpha];
+}
+
+
 + (void)setColor:(UIColor *)color
 {
     [[DKProgressHUD sharedInstance] setColor:color];

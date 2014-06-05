@@ -46,6 +46,9 @@
 
 @property (nonatomic) NSInteger colorIndex;
 
+// Alpha for a background, by default 0.8
+@property (nonatomic) float backgroundAlpha;
+
 + (DKProgressHUD*)sharedInstance;
 
 + (void)showInView:(UIView *)view;
@@ -63,6 +66,8 @@
 + (void)setColors:(NSArray *)arrayOfColors;
 
 + (void)setBackgroundColor: (UIColor *)color;
+
++ (void)setBackgroundAlpha:(float)backgroundAlpha;
 
 + (void)setHexagonSpinRadiusByMultipleOf:(float) multiple;
 
